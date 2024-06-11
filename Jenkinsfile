@@ -70,8 +70,8 @@ agent any
 
                 echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin
               
-                docker tag react-hot-cold-deploy:latest krezler21/react-hot-cold:${NEXT_VERSION}
-                docker push krezler21/react-hot-cold:${NEXT_VERSION}
+                docker tag react-hot-cold-deploy:latest krezler21/react-hot-cold:error
+                docker push krezler21/react-hot-cold:error
                 docker logout
 
                 echo
